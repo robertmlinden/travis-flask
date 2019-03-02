@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<meta charset="UTF-8" />
+				<title>Add React in One Minute</title>
+				<script src="{{ url_for('static',filename='load.js')}}"></script>
+				</head>
+		<body>
+
+    		<table id='sheet'></table>
+
+    		<!-- Load React. -->
+    		<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+			<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+			<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+				<!-- <script type="text/jsx">
+						'use strict';
+
+						console.log('lmaasdjflkasdjasdf@@@@@@@@@@@@');
+
+						const e = React.createElement;
+
+						class Tile extends React.Component {
+								constructor(props) {
+										super(props);
+										this.index = props.index
+								}
+
+								render() {
+										return(
+												<td>{this.index}</td>
+										);
+								}
+						}
+
+						console.log('lmaasdjflkasdj');
+
+						const sheet = document.querySelector('#sheet');
+
+						for(i = 0; i< 10; i++) {
+								console.log('lmao');
+								tr = e('tr', {id: 'tr-' + i});
+								ReactDom.render(tr, sheet);
+								for(j = 0; j < 10; j++) {
+										td = e(Tile, {index: (i*10 + j)});
+										ReactDom.render(td, tr);
+								}
+						}
+				</script> -->
+		</body>
+</html>
